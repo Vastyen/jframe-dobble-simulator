@@ -1,11 +1,16 @@
+package main.java.model;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
+
 public class DobbleGame {
 
     private ArrayList gameArea;
-    private ArrayList gameDeck;
+    private Dobble gameDeck;
+
+    private Player principalPlayer;
+
     private ArrayList<Player> gamePlayers;
     private int gameNumPlayers;
     private String gameMode;
@@ -13,12 +18,15 @@ public class DobbleGame {
     /**
      * @descr: Método constructor.
      */
-    public DobbleGame(ArrayList gameArea, ArrayList gameDeck, ArrayList<Player> gamePlayers, int gameNumPlayers, String gameMode) {
-        this.gameArea = gameArea;
-        this.gameDeck = gameDeck;
-        this.gamePlayers = gamePlayers;
+    public DobbleGame(int gameNumPlayers, String gameMode, Player principalPlayer) {
+        this.gameArea = new ArrayList<>();
+        this.principalPlayer = principalPlayer;
+        this.gamePlayers = new ArrayList<>();
         this.gameNumPlayers = gameNumPlayers;
         this.gameMode = gameMode;
+        this.gamePlayers.add(this.principalPlayer);
+
+
     }
 
     /**
@@ -33,11 +41,11 @@ public class DobbleGame {
         this.gameArea = gameArea;
     }
 
-    public ArrayList getGameDeck() {
+    public Dobble getGameDeck() {
         return gameDeck;
     }
 
-    public void setGameDeck(ArrayList gameDeck) {
+    public void setGameDeck(Dobble gameDeck) {
         this.gameDeck = gameDeck;
     }
 
@@ -133,7 +141,7 @@ public class DobbleGame {
      */
     public int randomNumber(){
         int min = 0;
-        int max = getGameDeck().size()-1;
+        int max = getGameDeck().getCardsDeck().size()-1;
         Random random = new Random();
         int value = random.nextInt(max + min) + min;
         return value;

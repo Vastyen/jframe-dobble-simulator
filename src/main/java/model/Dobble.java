@@ -1,7 +1,6 @@
+package main.java.model;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Collections;
 import java.util.Objects;
 
 public class Dobble {
@@ -12,8 +11,38 @@ public class Dobble {
     /**
      * @descr: Método constructor.
      */
-    public Dobble (){
+    public Dobble (int numE, int maxC){
+
+        ArrayList card = new ArrayList();
         this.cardsDeck = new ArrayList<>();
+
+        int n  = numE-1;
+
+        for (int i = 1; i <= n + 1; i++) {
+            card.add(i);
+        }
+        this.addCard(card);
+        for (int j = 1; j <= n; j++) {
+            card.clear();
+            card.add(1);
+            for (int k = 1; k <= n; k++) {
+                card.add(n * j + (k + 1));
+            }
+            this.addCard(card);
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                card.clear();
+                card.add(i + 1);
+
+                for (int k = 1; k <= n; k++) {
+                    card.add(n + 2 + n * (k - 1) + (((i - 1) * (k - 1) + j - 1) % n));
+                }
+                this.addCard(card);
+            }
+        }
+
+
     }
 
 

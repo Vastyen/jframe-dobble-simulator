@@ -1,6 +1,6 @@
 package main.java;
 
-import main.java.view.VistaPrincipal;
+import main.java.view.VistaBienvenida;
 
 public class Main {
 
@@ -8,8 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        VistaPrincipal vista = new VistaPrincipal();
+        VistaBienvenida vista = new VistaBienvenida();
         vista.setVisible(true);
+
 
 
 

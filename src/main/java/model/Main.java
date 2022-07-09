@@ -1,3 +1,5 @@
+/* package main.java.model;
+
 import java.util.*;
 
 public class Main {
@@ -17,7 +19,7 @@ public class Main {
         ArrayList tempCardsSet = new ArrayList<>();
         ArrayList<String> gameArea = new ArrayList();
         // Se instancia un juego con parámetros iniciales que serán modificados a lo largo del juego.
-        DobbleGame game = new DobbleGame(gameArea, cardsSet, gamePlayers, 1, "No hay juegos activos.");
+        DobbleGame game = new DobbleGame(gameArea, cardsSet, 1, "No hay juegos activos.");
         while (true) {
             System.out.println("### Dobble ###");
             System.out.println("## Registrado como: " + startUser);
@@ -38,30 +40,8 @@ public class Main {
                 int maxCards = sc.nextInt();
                 int n = cantEle - 1;
                 ArrayList<Integer> card = new ArrayList();
-                Dobble mazo = new Dobble();
-                for (int i = 1; i <= n + 1; i++) {
-                    card.add(i);
-                }
-                mazo.addCard(card);
-                for (int j = 1; j <= n; j++) {
-                    card.clear();
-                    card.add(1);
-                    for (int k = 1; k <= n; k++) {
-                        card.add(n * j + (k + 1));
-                    }
-                    mazo.addCard(card);
-                }
-                for (int i = 1; i <= n; i++) {
-                    for (int j = 1; j <= n; j++) {
-                        card.clear();
-                        card.add(i + 1);
+                Dobble mazo = new Dobble(cantEle, maxCards);
 
-                        for (int k = 1; k <= n; k++) {
-                            card.add(n + 2 + n * (k - 1) + (((i - 1) * (k - 1) + j - 1) % n));
-                        }
-                        mazo.addCard(card);
-                    }
-                }
 
                 System.out.println("####################################");
                 System.out.println("Existen 3 modos de juegos");
@@ -176,3 +156,6 @@ public class Main {
         }
     }
 }
+
+
+ */
