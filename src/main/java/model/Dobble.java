@@ -50,13 +50,12 @@ public class Dobble {
      * @descr: Métodos selectores y modificadores.
      */
 
-    public ArrayList getCardsDeck() {
+    public ArrayList<Card> getCardsDeck() {
         return cardsDeck;
     }
     public void setCardsDeck(ArrayList cardsDeck) {
         this.cardsDeck = cardsDeck;
     }
-
     public int getSize(){
         return this.cardsDeck.size();
     }

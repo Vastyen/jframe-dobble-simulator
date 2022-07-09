@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class DobbleGame {
 
-    private ArrayList gameArea;
+    private ArrayList<Card> gameArea;
     private Dobble gameDeck;
 
     private Player principalPlayer;
@@ -19,21 +19,19 @@ public class DobbleGame {
      * @descr: Método constructor.
      */
     public DobbleGame(int gameNumPlayers, String gameMode, Player principalPlayer) {
-        this.gameArea = new ArrayList<>();
+        this.gameArea = new ArrayList<Card>();
         this.principalPlayer = principalPlayer;
         this.gamePlayers = new ArrayList<>();
         this.gameNumPlayers = gameNumPlayers;
         this.gameMode = gameMode;
         this.gamePlayers.add(this.principalPlayer);
-
-
     }
 
     /**
      * @descr: Métodos selectores y modificadores.
      */
 
-    public ArrayList getGameArea() {
+    public ArrayList<Card> getGameArea() {
         return gameArea;
     }
 
@@ -95,6 +93,7 @@ public class DobbleGame {
     public void cleanGameArea(){
         this.gameArea.clear();
     }
+
 
 
     /**

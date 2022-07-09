@@ -19,7 +19,6 @@ public class MenuPrincipal extends JFrame{
     private JButton salirButton;
 
     public MenuPrincipal(Player player){
-
         this.setTitle("Dobble Game Simulation");
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -42,25 +41,37 @@ public class MenuPrincipal extends JFrame{
         registrarJugadorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RegistrarView registrarView = new RegistrarView(game);
-                registrarView.setVisible(true);
+                if (game == null){
+                    JOptionPane.showMessageDialog(null, "Primero debe crear un juego!");
+                }
+                else{
+                    RegistrarView registrarView = new RegistrarView(game);
+                    registrarView.setVisible(true);
+                }
             }
         });
 
         jugarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JugarView jugarView = new JugarView(game);
-                jugarView.setVisible(true);
+                if (game == null){
+                    JOptionPane.showMessageDialog(null, "Primero debe crear un juego!");
+                }
+                else {
+                    JugarView jugarView = new JugarView(game);
+                    jugarView.setVisible(true);
+                }
             }
         });
-
-
 
         estadoDelJuegoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, game.toString());
+                if (game == null){
+                    JOptionPane.showMessageDialog(null, "Primero debe crear un juego!");
+                }
+                else
+                    JOptionPane.showMessageDialog(null, game.toString());
             }
         });
 
