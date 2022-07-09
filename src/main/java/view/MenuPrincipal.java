@@ -20,8 +20,6 @@ public class MenuPrincipal extends JFrame{
 
     public MenuPrincipal(Player player){
 
-
-
         this.setTitle("Dobble Game Simulation");
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,22 +29,45 @@ public class MenuPrincipal extends JFrame{
         salirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 System.exit(0);
-
-
             }
         });
         crearJuegoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                DobbleGame game = new DobbleGame(1,"stackMode", player);
-
-
+                CardsSetView cardsSetView = new CardsSetView(player,MenuPrincipal.this);
+                cardsSetView.setVisible(true);
             }
         });
+        registrarJugadorButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                RegistrarView registrarView = new RegistrarView(game);
+                registrarView.setVisible(true);
+            }
+        });
+
+        jugarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JugarView jugarView = new JugarView(game);
+                jugarView.setVisible(true);
+            }
+        });
+
+
+
+        estadoDelJuegoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, game.toString());
+            }
+        });
+
+
     }
 
-
+    public void setGame(DobbleGame game) {
+        this.game = game;
+    }
 }

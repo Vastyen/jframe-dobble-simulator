@@ -12,7 +12,7 @@ public class Player {
      * @descr: Método constructor.
      */
 
-    public Player (String name, int score, boolean turnStatus){
+    public Player (String name, int score){
         this.name = name;
         this.score = score;
         this.turnStatus = false; // Por defecto el jugador no está en su turno.

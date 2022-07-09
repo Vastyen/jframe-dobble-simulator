@@ -57,6 +57,12 @@ public class Dobble {
         this.cardsDeck = cardsDeck;
     }
 
+    public int getSize(){
+        return this.cardsDeck.size();
+    }
+
+
+
     /**
      * @descr: Método que añade una copia de la carta al cardsSet.
      * @param: No aplica.

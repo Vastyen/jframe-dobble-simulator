@@ -78,19 +78,24 @@ public class DobbleGame {
      * @param: No aplica.
      * @return: No aplica.
      */
-    public void stackMode(ArrayList gameArea, ArrayList gameDeck){
-        int sizeDeck = gameDeck.size();
+    public void stackMode(){
+        int sizeDeck = gameDeck.getCardsDeck().size();
         if (sizeDeck == 1){
-            gameArea.add(gameDeck.get(0));
-            gameDeck.remove(0);
+            this.gameArea.add(gameDeck.getCardsDeck().get(0));
+            gameDeck.getCardsDeck().remove(0);
         }
         else{
-            gameArea.add(gameDeck.get(sizeDeck-1));
-            gameArea.add(gameDeck.get(sizeDeck-2));
-            gameDeck.remove(sizeDeck-1);
-            gameDeck.remove(sizeDeck-2);
+            this.gameArea.add(gameDeck.getCardsDeck().get(sizeDeck-1));
+            this.gameArea.add(gameDeck.getCardsDeck().get(sizeDeck-2));
+            gameDeck.getCardsDeck().remove(sizeDeck-1);
+            gameDeck.getCardsDeck().remove(sizeDeck-2);
         }
     }
+
+    public void cleanGameArea(){
+        this.gameArea.clear();
+    }
+
 
     /**
      * @descr: Método que realiza el modo de juego emptyHandsStackMode.
