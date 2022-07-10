@@ -1,0 +1,9 @@
+Requerimientos Funcionales            Evaluación
+___________________________     |    ____________
+DobbleGame		          	  1
+Register				  1
+Play		          		 0.75
+toString			 	  1
+Card			  		  1
+Equals			  		  1
+User vs User			 	  1
