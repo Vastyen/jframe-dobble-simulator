@@ -62,20 +62,12 @@
           <text value="Generar"/>
         </properties>
       </component>
-      <component id="8457a" class="javax.swing.JRadioButton" binding="demoModeRadioButton" default-binding="true">
-        <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Demo Mode"/>
-        </properties>
-      </component>
       <component id="22ac0" class="javax.swing.JRadioButton" binding="stackModeRadioButton" default-binding="true">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Stack Mode"/>
+          <text value="User vs User Mode"/>
         </properties>
       </component>
     </children>

@@ -13,7 +13,7 @@ public class GameCTRL {
 
         switch (gameMode) {
             case 1:
-                DobbleGame stackMode = new DobbleGame(1, "stackMode", player);
+                DobbleGame stackMode = new DobbleGame(1, "Player vs Player", player);
                 Dobble cardsSet = new Dobble(numE, maxC);
                 stackMode.setGameDeck(cardsSet);
                 return stackMode;

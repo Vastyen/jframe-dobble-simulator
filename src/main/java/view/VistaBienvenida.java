@@ -1,15 +1,11 @@
 package main.java.view;
 
 import main.java.controller.BienvenidaCTRL;
-import main.java.model.DobbleGame;
-
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class VistaBienvenida extends JFrame {
-
 
     private JPanel panelMain;
     private JButton registrarJuegoButton;

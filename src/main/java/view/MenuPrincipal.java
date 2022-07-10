@@ -1,6 +1,5 @@
 package main.java.view;
 
-import main.java.model.Dobble;
 import main.java.model.DobbleGame;
 import main.java.model.Player;
 
@@ -17,6 +16,7 @@ public class MenuPrincipal extends JFrame{
     private JButton registrarJugadorButton;
     private JButton jugarButton;
     private JButton salirButton;
+    private JButton instruccionesDeJuegoButton;
 
     public MenuPrincipal(Player player){
         this.setTitle("Dobble Game Simulation");
@@ -75,7 +75,15 @@ public class MenuPrincipal extends JFrame{
             }
         });
 
-
+        instruccionesDeJuegoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Este juego consta de un mazo de cartas el cual será creado en el momento donde \n" +
+                        "se decide crear un nuevo juego. La cantidad de elementos está determinada por el usuario.\n" +
+                        "En cualquier momento es posible realizar registros a través del botón de registros. Se puede \n" +
+                        "revisar el estado general del juego en el botón estado del juego.\n");
+            }
+        });
     }
 
     public void setGame(DobbleGame game) {

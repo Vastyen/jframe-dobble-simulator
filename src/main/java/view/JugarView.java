@@ -21,31 +21,24 @@ public class JugarView extends JFrame{
         this.pack();
         this.setLocationRelativeTo(null);
 
-
         PlayCTRL ctrl = new PlayCTRL();
         ctrl.realizarJugada(game);
         gameCard.setText(game.getGameArea().get(0).toString());
         ownCard.setText(game.getGameArea().get(1).toString());
 
-
         jugarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-
                 boolean resp = ctrl.jugarElemento(game, Integer.parseInt(selectedElement.getText()));
-
                 if (resp == true){
                     JOptionPane.showMessageDialog(null,"Haz anotado un punto!");
                     game.cleanGameArea();
+                    ctrl.sumarPuntaje(game, namePlayer.getText());
                 }
                 else{
                     JOptionPane.showMessageDialog(null,"Más suerte para la próxima!");
                 }
-
                 JugarView.super.dispose();
-
-
             }
         });
     }
