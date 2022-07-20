@@ -6,7 +6,10 @@ Departamento de Ingeniería Informática
 Paradigma: Orientado a Eventos y Orientado a Objetos           
 Fecha de Entrega: 11 de julio              
 Lenguaje de Programación: Java              
-Desarrollador: Bastián Escribano - @vastien        
+Desarrollador: Bastián Escribano - @vastien       
+Calificación: 5.3
+
+_____
 
 # Paradigma Orientado a Eventos
 
