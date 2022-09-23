@@ -10,7 +10,7 @@ July, 2022.
 
 _________________________________________________________________
 
-Others Languages
+Other Languages
 
 * [Spanish](https://github.com/vastien/jframe-dobble-simulator/blob/main/READMEes.md)
 
