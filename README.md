@@ -3,7 +3,7 @@
 
 Others Languages
 
-* [Spanish](https://github.com/vastien/jframe-dobble-simulator/READMEes.md)
+* [Spanish](https://github.com/vastien/jframe-dobble-simulator/blob/main/READMEes.md)
 
 _________________________________________________________________
                   
