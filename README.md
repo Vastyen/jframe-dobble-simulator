@@ -1,12 +1,5 @@
 # Event-Drive & Object-Oriented with Java
 ## Dobble Simulator with Java
-
-Others Languages
-
-* [Spanish](https://github.com/vastien/jframe-dobble-simulator/blob/main/READMEes.md)
-
-_________________________________________________________________
-                  
                   
 Event-Drive & Object-Oriented Paradigm                         
 Programming Language: Java                              
@@ -15,6 +8,14 @@ University of Santiago of Chile
 Computer Science Department                
 July, 2022.        
 
+_________________________________________________________________
+
+Others Languages
+
+* [Spanish](https://github.com/vastien/jframe-dobble-simulator/blob/main/READMEes.md)
+
+_________________________________________________________________
+                  
 # Event-Drive Paradigm
 
 In computer programming, event-driven programming is a programming paradigm in which the flow of the program is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or message passing from other programs or threads. Event-driven programming is the dominant paradigm used in graphical user interfaces and other applications (e.g., JavaScript web applications) that are centered on performing certain actions in response to user input. This is also true of programming for device drivers (e.g., P in USB device driver stacks).
