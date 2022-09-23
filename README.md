@@ -1,6 +1,13 @@
 # Event-Drive & Object-Oriented with Java
 ## Dobble Simulator with Java
 
+Others Languages
+
+* [Spanish](https://github.com/vastien/jframe-dobble-simulator/READMEes.md)
+
+_________________________________________________________________
+                  
+                  
 Event-Drive & Object-Oriented Paradigm                         
 Programming Language: Java                              
 Developer: Bastián Escribano - @vastien                      
