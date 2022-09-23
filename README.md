@@ -79,7 +79,7 @@ To represent the real game of Dobble, each line must join 8 points. This results
 ## Install
 
 ### Requirements
-* [Java 8 o superior](https://www.java.com/es/download/ie_manual.jsp)         
+* [Java 8 or higher](https://www.java.com/es/download/ie_manual.jsp)         
 * [Git](https://git-scm.com/downloads)
 
   ### Use
